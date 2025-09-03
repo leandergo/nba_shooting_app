@@ -6,7 +6,7 @@ import numpy as np
 st.title("NBA Player Shooting Percentage Animation")
 
 year = st.selectbox("Select Year", np.arange(1996, 2025, 1))
-nba_shot_data = pd.read_csv(f"/Users/Leander/Desktop/SUMMER 2025/nba_shooting_app/nba_data/shotdetail_{year}.csv")
+nba_shot_data = pd.read_csv(f"nba_data/shotdetail_{year}.csv")
 
 player_list = nba_shot_data["PLAYER_NAME"].unique()
 player = st.selectbox("Select Player", player_list)
